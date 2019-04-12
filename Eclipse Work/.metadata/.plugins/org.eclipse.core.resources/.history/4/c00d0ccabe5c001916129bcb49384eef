@@ -1,0 +1,33 @@
+/**
+ * 
+ */
+package com.jn.edu;
+
+import java.util.Random;
+import java.util.UUID;
+
+/**
+ * @author JohnN
+ *
+ */
+public class WhileExample {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		Random rand=new Random();
+		int numberToFind = 0;
+		boolean found = false;
+		while (! found) {
+			numberToFind = rand.nextInt(1001)+1;
+			System.out.println(numberToFind);
+			if(((numberToFind % 7)==0) & ((numberToFind % 13)==0))
+				found = true;
+		}
+		System.out.println("Number found is" + numberToFind);
+	}
+
+}

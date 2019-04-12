@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;com.jn.edu.Multper&apos; to &apos;Adding&apos;&#x0D;&#x0A;- Original project: &apos;HelloW&apos;&#x0D;&#x0A;- Original element: &apos;com.jn.edu.Multper&apos;&#x0D;&#x0A;- Renamed element: &apos;com.jn.edu.Adding&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;Multper&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;com.jn.edu{Multper.java[Multper" matchStrategy="1" name="Adding" qualified="false" references="true" similarDeclarations="false" stamp="1555007606699" textual="false" version="1.0"/>
+</session>

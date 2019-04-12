@@ -1,0 +1,10 @@
+package com.jn.edu;
+
+public class ConditionalAssignment {
+
+	public static void main(string[] args) {
+		Scanner sc=new Scanner(System.in);
+		System.out
+		
+	}
+}

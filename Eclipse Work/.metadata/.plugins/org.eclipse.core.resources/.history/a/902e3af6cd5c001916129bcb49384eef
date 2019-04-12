@@ -1,0 +1,75 @@
+/**
+ * 
+ */
+package com.jn.edu;
+
+import java.util.Random;
+import java.util.Scanner;
+
+/**
+ * @author JohnN
+ *
+ */
+public class SquareRoot {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		
+		
+		Scanner sc= new Scanner(System.in);
+		Random rand = new Random();
+		System.out.println("Enter a Number");
+		int input=sc.nextInt();
+		double numberToFind = 0.000001;
+		int est = 2;
+		boolean found= false;
+		double result = input/est;
+		
+		
+		
+//		while (true){
+//			numberToFind=rand.nextInt(1001)+1;
+//			System.out.println(numberToFind);
+//			
+//			result =input/est;
+//			double error = ((result-est)>0)? result-est: (result-est)*-1.0;
+//
+//			double r =(est +error)/2;
+//			result = input/r;
+//			error = est-result;
+//			if(found)
+//			System.out.println("Number found is "+ numberToFind);
+//			
+			
+//		while(!found)
+//		{
+//			numberToFind=rand.nextInt(1001)+1;
+//			System.out.println(numberToFind);
+//			
+//			result=input/est;
+//			double err=result;
+//			result=(err + (input/err))/2;
+//			if(found)
+//				System.out.println("Number found is "+ numberToFind);
+//		}
+		
+//		
+//		if(input<0) input=-input;
+//		if(input==0) System.out.println("the Square root of 0 is "+0);
+//		if(input>0) 
+//		{
+//			while(!found)
+//			{
+//				double result2=result;
+//				result=(result2 +(input/result2))/est;
+//			}
+//		}
+//		System.out.println("Number found is "+ input);
+		}
+		
+	}
+	
+
+

@@ -1,0 +1,61 @@
+/**
+ * 
+ */
+package com.jn.edu;
+
+import java.util.Random;
+import java.util.Scanner;
+
+/**
+ * @author JohnN
+ *
+ */
+public class SquareRoot {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		
+		
+		Scanner sc= new Scanner(System.in);
+		Random rand = new Random();
+		System.out.println("Enter a Number");
+		int input=sc.nextInt();
+		double numberToFind = 0.000001;
+		int est = 2;
+		boolean found= false;
+		double result;
+//		while (true){
+//			numberToFind=rand.nextInt(1001)+1;
+//			System.out.println(numberToFind);
+//			
+//			result =input/est;
+//			double error = ((result-est)>0)? result-est: (result-est)*-1.0;
+//
+//			double r =(est +error)/2;
+//			result = input/r;
+//			error = est-result;
+//			if(found)
+//			System.out.println("Number found is "+ numberToFind);
+//			
+			
+		while(!found)
+		{
+			numberToFind=rand.nextInt(1001)+1;
+			System.out.println(numberToFind);
+			
+			result=input/est;
+			double err=result;
+			result=(err + (input/err))/2;
+			if(found)
+				System.out.println("Number found is "+ numberToFind);
+		}
+		
+			
+		}
+		
+	}
+	
+
+
