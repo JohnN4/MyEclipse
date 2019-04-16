@@ -1,0 +1,44 @@
+/**
+ * 
+ */
+package com.jn.edu;
+
+import java.util.Scanner;
+import java.util.regex.Pattern;
+
+/**
+ * @author JohnN
+ *
+ */
+public class RegularExpressions {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+	Scanner sc=new Scanner(System.in);
+	System.out.println("Enter date in mm/dd/yyyy format");
+		String dateStr=sc.next();
+	if(dateValidated(dateStr))
+			System.out.println("Valid Date");
+		else
+			System.out.println("Invalid Date");
+	}
+	
+	public static boolean dateValidated (String s) {
+		
+		//0= yyyy/mm/dd
+		//1= mm/dd/yy
+		//2= mm/dd/yyyy
+		//3=dd/mm/yy
+		//4=dd/mm/yyyy
+		//5=yyyddd
+		//6=dddyyyy
+		
+		String validDatePattern ="[0][0-9]|1[0-2]/(0[1-9]|12[0-9]|3[01]/(19|20)[0-9][0-9]";
+		
+		boolean retVal = Pattern.matches(validDatePattern, s);
+		return retVal;		
+	}
+
+}

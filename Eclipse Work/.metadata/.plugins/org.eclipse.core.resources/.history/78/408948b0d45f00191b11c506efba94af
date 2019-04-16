@@ -1,0 +1,38 @@
+/**
+ * 
+ */
+package com.jn.edu;
+
+import java.util.Scanner;
+
+/**
+ * @author JohnN
+ *
+ */
+public class QuanitityString {
+	static String fruits[] = { "Strawberries", "Bananas", "Oranges", "Apples", "Mangoes", "Pineapples" };
+	static double costs[] = { 0.89, 0.79, 0.3, 1.39, 1.50, 0.99 };
+	static double quantities[] = { 20, 40, 90, 12, 24, 8 };
+
+	// public static double
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter Fruit");
+		String inputFruit = sc.next();
+//		System.out.println("Enter Quanitiy");
+//		double inputQ = sc.nextDouble();
+		for (int i = 0; i < fruits.length; i++) {
+			if (inputFruit.equals(fruits[i])) {
+				inputFruit = fruits[i];
+
+				System.out.println(inputFruit + " " + costs[i]+" "+quantities[i]);
+
+			}
+		}
+	}
+}

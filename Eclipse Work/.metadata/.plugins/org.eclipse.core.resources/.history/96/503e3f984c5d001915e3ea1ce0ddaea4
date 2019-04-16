@@ -1,0 +1,39 @@
+/**
+ * 
+ */
+package com.jn.edu;
+
+import java.util.Scanner;
+
+/**
+ * @author JohnN
+ *
+ */
+public class FindGCD {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+	Scanner sc=new Scanner(System.in);
+	
+	System.out.println("Enter low and a high number");
+	int a = sc.nextInt();
+	int b = sc.nextInt();
+	int subract;
+	int d;
+	if (a>b) 
+		{
+		System.out.println("Please Make Second "
+		
+			+ "Entery a bigger Number"); System.exit(a); // a check that a is less then b
+		}
+	while (a==0 | b !=0)
+	{
+		d=a-b;
+		b=d;
+	}
+	System.out.println(b);
+	}
+
+}

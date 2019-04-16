@@ -1,0 +1,35 @@
+/**
+ * 
+ */
+package com.jn.edu;
+
+/**
+ * @author JohnN
+ *
+ */
+public class BinaryMask {
+	static byte wholeMilk=1; //00000001
+	static byte lowFatMilk=2; //00000010
+	static byte skimMilk=4; //00000100
+	static byte whippedCream=8; //00001000
+	static byte chocolateDrizzle=16;
+	static byte caramelDrizzle=32;
+	static byte sprinkles=64;
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+	
+	public static String contents (byte mask)
+	{
+		String retval ="";
+		if ((mask & wholeMilk) !=0)
+				{
+			retval = "whole Milk";
+					}
+				}
+}

@@ -1,0 +1,37 @@
+/**
+ * 
+ */
+package com.jn.edu;
+
+import java.util.Scanner;
+
+/**
+ * @author JohnN
+ *
+ */
+public class Masks {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+
+		Scanner sc = new Scanner(System.in);
+
+		int clear = 00000001; // 1
+		int sunny = 00000010; // 2
+		int cloudy = 00000100; // 4
+		int storm = 00001000; // 8
+		int snow = 000100000; // 16
+		int sleet = 00100000; // 32
+		int rain = 01000000; // 64
+		if ((sunny & clear) != 0)
+			System.out.println("clear");
+		if ((cloudy & rain) != 0)
+			System.out.println("it about to rain");
+		if ((sunny & clear) != 0)
+			System.out.println("clear");
+
+	}
+
+}

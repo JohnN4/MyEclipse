@@ -1,0 +1,48 @@
+/**
+ * 
+ */
+package com.jn.edu;
+
+import java.util.Scanner;
+
+/**
+ * @author JohnN
+ *
+ */
+public class CToFConversion {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter 'C' to covert from Celcius to"
+				+ " Farenheit or F to Celcius ");
+		char direction = sc.next().charAt(0);
+		System.out.println("Enter the value to convert");
+		double input = sc.nextDouble();
+		switch(direction)
+		{
+		case 'C':
+		case 'c':
+			System.out.println(input +"degrees Celcius ="+CtoF(input));
+			break;
+		case 'F':
+		case 'f':
+			System.out.println(input +" degrees Fahrenheit = "+FtoC(input));
+			break;
+		}
+		
+	}
+	
+	static double CtoF (double c)
+	{
+		return (c * 1.8) +32;
+	}
+	static double FtoC (double f)
+	{
+		return ((f-32.0)/1.8);
+	}
+
+}

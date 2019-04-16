@@ -1,0 +1,35 @@
+/**
+ * 
+ */
+package com.jn.edu;
+
+import java.util.Scanner;
+
+/**
+ * @author JohnN
+ *
+ */
+public class PrimeNumber {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		Scanner sc= new Scanner(System.in);
+		
+		System.out.println("Enter the Limit");
+		int input = sc.nextInt();
+	
+		int[]a=new int[input];
+		
+		for(int i=0;i<input;i++)
+		{
+			System.out.println(i);
+		int p= a[3];
+		i=2*p;
+		System.out.println(i);
+		}
+
+	}
+
+}

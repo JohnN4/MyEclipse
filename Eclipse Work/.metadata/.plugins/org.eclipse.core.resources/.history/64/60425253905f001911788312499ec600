@@ -1,0 +1,78 @@
+/**
+ * 
+ */
+package com.jn.edu;
+
+import java.util.Scanner;
+
+/**
+ * @author JohnN
+ *
+ */
+public class Masks {
+
+	static byte clear = 1; // 00000001;
+	static byte sunny = 2; // 00000010;
+	static byte cloudy = 4; // 00000100;
+	static byte storm = 8; // 00001000;
+	static byte snow = 16; // 00010000;
+	static byte sleet = 32; // 00100000;
+	static byte rain = 64; // 01000000;
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+
+		Scanner sc = new Scanner(System.in);
+
+		byte Order = sc.nextByte();
+		String contains = contain(Order);
+		System.out.println("The Weather is " + contains);
+
+	}
+
+	public static String contain(byte mask) {
+
+		String Val = "";
+		if ((mask & clear) != 0) {
+			Val = "it Clear";
+		}
+		if ((mask & sunny) != 0) {
+			if (!Val.equals(""))
+				Val += ", ";
+			Val += "It sunny";
+		}
+		if ((mask & cloudy) != 0) {
+			if (!Val.equals(""))
+				Val += ", ";
+			Val += "It cloudy";
+		}
+		if ((mask & storm) != 0) {
+			if (!Val.equals(""))
+				Val += ", ";
+			Val += "It stormy";
+		}
+		if ((mask & snow) != 0) {
+			if (!Val.equals(""))
+				Val += ", ";
+			Val += "It snowing";
+		}
+		if ((mask & sleet) != 0) {
+			if (!Val.equals(""))
+				Val += ", ";
+			Val += "It sleet";
+		}
+		if ((mask & rain) != 0) {
+			if (!Val.equals(""))
+				Val += ", ";
+			Val += "It raining";
+		}
+		if ((((mask & 1) != 0) & ((mask & 2) != 0)) | (((mask & 1) != 0) & ((mask & 4) != 0))
+				| (((mask & 2) != 0) & ((mask & 4) != 0)))
+			System.out.println("Invalid combination of ingredients");
+		return Val;
+
+	}
+
+}
