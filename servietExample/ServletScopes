@@ -1,0 +1,23 @@
+Servlet Scopes:
+
+Scope is a section of code or location of execution in which data is valid and accessible.
+
+Servlet scopes have to do with how data is accessible within a JavaEE application.
+
+1. Request Scope - Things in the request object are created for each request, and this data
+	disappears after the request is completed. Data in the request object. Think: Form data,
+	request-url, request body, etc.
+	
+2. Session Scope - Things in a session will survive between requests but are scoped to 
+	individual users through the JSESSIONID cookie. This data is not persisted between
+	application runs.
+	
+3. Servlet Scope - A parameter that is defined and accessible only within a single servlet. Defined
+	in the web.xml document. Key-value pairs.
+
+4. Application Scope - A parameter that is defined and accessible from any servlet. Defined in
+	the web.xml document. Key-value pairs.
+	
+	
+	
+	<context-param> it is the parameter of the scope

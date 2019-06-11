@@ -1,0 +1,65 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+  <display-name>Archetype Created Web Application</display-name>
+  
+  
+  <!-- 
+		1. Creating and mapping our servlets.
+		2. Configuring how servlets start up.
+		3. Map error codes and exceptions to error pages.
+		4. Set application and servlet scoped variables.
+	 -->
+
+	<context-param>
+		<param-name>animal</param-name>
+		<param-value>dog</param-value>
+		<description>Application scope variable, accessible within any
+			servlet.</description>
+	</context-param>
+  
+  
+  
+  <servlet>
+  <servlet-name>hello</servlet-name>
+  <servlet-class>servietExample.HelloWorldServlet</servlet-class>
+  
+  <init-param>
+			<param-name>name</param-name>
+			<param-value>Ted</param-value>
+			<description>This is a servlet scoped variable. Only visible to the
+				hello servlet</description>
+		</init-param>
+  
+  </servlet>
+  
+  
+  <servlet>
+  	<servlet-name>DisneyServlet</servlet-name>
+  	<display-name>DisneyServlet</display-name>
+  	<description></description>
+  	<servlet-class>servietExampleDisney.DisneyServlet</servlet-class>
+  	<load-on-startup>1</load-on-startup>
+  	
+  </servlet>
+  
+ 
+  
+  
+  <servlet-mapping>
+  <servlet-name>hello</servlet-name>
+  <url-pattern>/hello/*</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>DisneyServlet</servlet-name>
+  	<url-pattern>/disney/*</url-pattern>
+  </servlet-mapping>
+  
+  <error-page>
+		<error-code>404</error-code>
+		<location>/404.html</location>
+	</error-page>
+  
+</web-app>
