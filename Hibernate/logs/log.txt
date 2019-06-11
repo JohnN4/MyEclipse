@@ -1,0 +1,14 @@
+2018-11-08 16:12:19 WARN  DriverManagerConnectionProviderImpl:73 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2018-11-08 16:12:21 WARN  JdbcEnvironmentInitiator:132 - HHH000342: Could not obtain connection to query metadata : null
+2018-11-08 19:31:03 WARN  DriverManagerConnectionProviderImpl:73 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2018-11-08 19:31:04 WARN  JdbcEnvironmentInitiator:132 - HHH000342: Could not obtain connection to query metadata : null
+2018-11-09 10:50:54 WARN  DriverManagerConnectionProviderImpl:73 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2018-11-09 10:50:55 WARN  JdbcEnvironmentInitiator:132 - HHH000342: Could not obtain connection to query metadata : null
+2018-11-09 10:58:12 WARN  DriverManagerConnectionProviderImpl:73 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2018-11-09 10:58:13 WARN  JdbcEnvironmentInitiator:132 - HHH000342: Could not obtain connection to query metadata : null
+2018-11-09 11:01:12 WARN  DriverManagerConnectionProviderImpl:73 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2018-11-09 11:01:13 WARN  JdbcEnvironmentInitiator:132 - HHH000342: Could not obtain connection to query metadata : null
+2018-11-09 11:04:33 WARN  DriverManagerConnectionProviderImpl:73 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2018-11-09 11:04:34 WARN  JdbcEnvironmentInitiator:132 - HHH000342: Could not obtain connection to query metadata : null
+2018-11-13 17:43:52 WARN  DriverManagerConnectionProviderImpl:73 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2018-11-13 17:43:55 WARN  JdbcEnvironmentInitiator:132 - HHH000342: Could not obtain connection to query metadata : null
